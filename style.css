@@ -14,10 +14,15 @@
 html {
     padding : 0;
     margin : 0;
+    font-family: 'AdiHaus';
 }
 body {
     min-width : 100%;
     min-height : 100vh;
+}
+.coming-soon-page {
+    max-width : 400px;
+    margin: 0 auto;
 }
 .main {
     width : 100%;
@@ -70,16 +75,16 @@ p {
 .text-input {
     color : grey;
     padding :1rem;
-    border : 0.5 solid  gray;
+    border : 2px solid gray;
     font-size : 16px;
-    border-radius: 2px;
-    border-right :none
+    border-radius: 5px;
 }
 button {
-    margin : 0;
+    margin: 0 0 0 7px;
     width : 70px;
     background-color: rgb(94, 94, 94);
     color : #FFFFFF;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 20px;
+    border : 2px solid gray;
 }
