@@ -19,8 +19,9 @@ html {
 body {
     min-width : 100%;
     min-height : 100vh;
+    display : flex;
 }
-.coming-soon-page {
+.all-container {
     max-width : 400px;
     margin: 0 auto;
 }
@@ -28,7 +29,7 @@ body {
     width : 100%;
     text-align: center;
 }
-.athlete-box {
+.athlete-mobile {
     background:  url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat right top;
     height : 250px;
     background-size: cover;
@@ -36,11 +37,12 @@ body {
     
 }
 .text-container {
-    padding : 0.5rem 1.2rem;
+    /* padding : 0.5rem 1.2rem; */
     display : flex;
     flex-direction: column;
     justify-content: center;
     margin : 0;
+    width : 100%;
 }
 #red {
     color : #CD3A24 ;
@@ -66,7 +68,7 @@ p {
     font-family: 'AdiHaus';
 }
 .input {
-    width : 80%;
+    width : 100%;
     margin : auto;
     padding :0;
     display : flex;
@@ -78,6 +80,7 @@ p {
     border : 2px solid gray;
     font-size : 16px;
     border-radius: 5px;
+    width : 80%
 }
 button {
     margin: 0 0 0 7px;
@@ -87,4 +90,40 @@ button {
     border-radius: 5px;
     font-size: 20px;
     border : 2px solid gray;
+}
+.desktop-image {
+    display : none;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url('https://assets.codepen.io/6060109/destop-bg.png') ;
+        background-size : cover;
+    }
+    .athlete-mobile {
+       display : none;
+    }
+    .all-container {
+        width : 50%;
+       
+    }
+    .main {
+        width : 100%;
+        text-align: left;
+    }
+    .desktop-image {
+        display : block;
+        width : 50%;
+        background-image : url('https://assets.codepen.io/6060109/athlete-big.png');
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+        background-size : cover;
+    }
+    .logo {
+        margin : 30px 30px 100px;
+        display : block;
+    }
+
+   #red,#black {
+    font-size : 64px;
+   }
 }
