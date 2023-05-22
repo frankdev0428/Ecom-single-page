@@ -30,9 +30,11 @@ body {
     text-align: center;
 }
 .athlete-mobile {
-    background:  url("https://assets.codepen.io/6060109/mobile-shoes.jpg") ;
-    height : 380px;
+    background:  url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat right top;
+    height : 250px;
     background-size: cover;
+    object-fit: cover;
+    
 }
 .text-container {
     /* padding : 0.5rem 1.2rem; */
@@ -43,7 +45,7 @@ body {
     width : 100%;
 }
 #red {
-    color :#1ba2cf;
+    color : #CD3A24 ;
     font-size : 40px;
     font-weight: 400;
     margin : 0;
@@ -95,7 +97,7 @@ button {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {
-        background-image: url('https://assets.codepen.io/6060109/waves.png') ;
+        background-image: url('https://assets.codepen.io/6060109/destop-bg.png') ;
         background-size : cover;
     }
     .athlete-mobile {
@@ -112,8 +114,8 @@ button {
     .desktop-image {
         display : block;
         width : 50%;
-        background-image : url('https://assets.codepen.io/6060109/shoes.png');
-        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%); */
+        background-image : url('https://assets.codepen.io/6060109/athlete-big.png');
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
         background-size : cover;
     }
     .logo {
