@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap');
+*{
+    padding :0;
+    margin :0;
+}
+body ,html{
+    min-width : 100%;
+    height : 100vh;
+    margin :0;
+}
+.main {
+    background-image: url('https://assets.codepen.io/6060109/ZigZag.png');
+    width : 100%;
+    height : 100%;
+    background-size: cover;
+    border : 0.5px solid;
+}
+.button-container {
+    /* border : 1px solid black; */
+    display : flex;
+    justify-content: flex-end;
+    width : 100%;
+}
+.panel,.dish-panel ,.process-panel {
+    width : 90%; 
+    width : 350px;
+    height : 700px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin : 70px auto;
+    box-shadow : 0px 40px 40px -20px #3C7861;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+.x {
+ width : 21.8px;
+ height : 21.8px; 
+ /* border : 1px solid black; */
+ border-radius : 50%;
+ margin : 1rem;
+}
+.logo-img {
+    /* border : 1px solid black; */
+    background-image: url('https://assets.codepen.io/6060109/food-happy.png');
+}
+.burger-img {
+    background-image: url('https://assets.codepen.io/6060109/hamburger+1.png');
+ }
+ .delivery-img {
+    background-image: url('https://assets.codepen.io/6060109/delivery-man+1.png');
+ }
+ .burger-img , .logo-img ,.delivery-img{
+    width: 109px;
+    height : 109px;
+    margin-bottom : 1rem;
+    background-size: cover;
+ }
+h2{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+}
+p {
+ margin : 1rem 3rem;
+ font-family: 'Ubuntu';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 26px;
+ text-align: center;
+}
+
+.inner-box {
+    /* border : 1px solid black; */
+    width : 80%;
+    display : flex;
+    align-items: center;
+    height : 66px;
+    border-radius: 10px;
+    background-color: #F0FFF5 ;
+    margin-top : 2rem;
+}
+.food-image {
+    background-image: url('https://assets.codepen.io/6060109/Rectangle.png');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width : 15%;
+    border: 1px solid black;
+    height: 100%;
+    border :none;
+    border-radius : 10px 0 0 10px;
+}
+.price-tag-box {
+    width : 40%;
+    padding-left : 2rem;
+}
+.price-tag-box h3 {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 14px;
+   margin : 4px;
+   color: #467A66;
+}
+#price-tag {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px; 
+    color: #467A66;
+}
+.inner-box a {
+ margin-left : 3rem;
+ padding : 0;
+ font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+color: #467A66;
+width : 53px;
+}
+.button {
+    width: 80%;
+    margin-top : 2rem;
+    /* border : 1px solid black; */
+   padding : 1.3rem 0;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+   border-radius: 5px;
+   border : none;
+   box-shadow: 0px 20px 20px rgba(103, 189, 153, 0.2);
+   background: #46A67E;
+   color : #FFFFFF ;
+   transition : .3s ease all;
+   letter-spacing: 0.9px;
+}
+.button:hover {
+    opacity : 0.8;
+    transition : .3s ease all;
+    cursor : pointer;
+}
+.next {
+    margin-top : 10rem;
+}
+.dot-container {
+    margin-top : 6rem;
+    display : flex;
+    width : 15%;
+    justify-content: space-between;
+}
+.dot {
+    width : 10px ;
+    height : 10px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+}
+.green {
+    background: #67BD99;
+}
+ .process-panel,.dish-panel {
+    display : none;
+}
+.gray {
+    background-color: grey;
+}
+@media only screen and (min-width: 992px) {
+  .main {
+    display : flex;
+    justify-content: space-evenly ;
+  }
+  .dish-panel, .process-panel {
+    display : flex;
+  }
+  .dot-container {
+    position : absolute;
+    bottom : 14rem;
+    display : flex;
+    justify-content: space-evenly;
+    width : 15%;
+  }
+}
