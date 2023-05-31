@@ -1,0 +1,105 @@
+* {
+    padding : 0;
+    margin: 0;
+    box-sizing : 0;
+}
+body {
+    background-color:  #3d0e0e;
+}
+.robot-emoji-container {
+    margin: auto;
+    width: 200px;
+}
+.head {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    background-color: #a4d9eb;
+    border: solid 5px #9bbcc2;
+    border-radius: 20px;
+    position: relative;
+  }
+.light {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bulb {
+  width: 30px;
+  height: 30px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  z-index: 1;
+  margin-bottom: -5px;
+}
+.stick {
+  width: 10px;
+  height: 15px;
+  background-color: #808080;
+}
+.ear {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 50px;
+  background-color: #c90a0a;
+}
+.ear:nth-of-type(1) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  left: -15px;
+}
+.ear:nth-of-type(2) {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  right: -15px;
+}
+.eyes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 25px;
+}
+.eye {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid #00b3ff;
+  background-color: white;
+}
+
+.nose {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #c90a0a;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.mouth {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #dedede;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.tooth {
+  width: 5px;
+  height: 100%;
+  background-color: black;
+}
