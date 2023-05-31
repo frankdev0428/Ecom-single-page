@@ -1,0 +1,58 @@
+#wrapper {
+    background-color: lightgrey;
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-decoration: underline;
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  #notifications {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .notification {
+    display: grid;
+    grid-template-areas: 
+    'photo text'
+    'photo time';
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  img {
+    grid-area: photo;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  .time {
+    grid-area: time;
+    align-self: end;
+    justify-self: end;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0;
+  }
+  p{
+    grid-area: text;
+    margin: 0;
+  }
+  .user {
+    font-weight: bold;
+  }
+  button {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #02203c;
+    color: white;
+  }
